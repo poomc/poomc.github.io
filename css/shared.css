@@ -1,0 +1,138 @@
+
+::selection {
+  background: #eeffff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #eeffff; /* Gecko Browsers */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+img.givingtree::selection, img.boy::selection {
+  background: #eeffee;
+}
+
+
+@font-face {
+  font-family: "Overpass";
+  font-weight: normal;
+  src: url("../fonts/overpass/Overpass-Regular.ttf");
+}
+
+
+@font-face {
+  font-family: "Overpass";
+  font-weight: light;
+  src: url("../fonts/overpass/Overpass-Light.ttf");
+}
+
+@font-face {
+  font-family: "Overpass";
+  font-weight: thin;
+  src: url("../fonts/overpass/Overpass-Thin.ttf");
+}
+
+
+body, html {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Overpass";
+  font-weight: normal;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+
+div.circle {
+  display: inline-block;
+  background: #ffffaa;
+}
+
+
+@media (min-aspect-ratio: 32/24) {
+
+  div.circle {
+    width: 4vh;
+    height: 4vh;
+    right:  25vh;
+    border-radius: 2vh;
+    position: fixed;
+  }
+
+  div.headitem {
+    z-index: 3;
+    position: fixed;
+    font-size: 2.5vh;
+    right: 13vh;
+    top: 5vh;
+    letter-spacing: 0.3vh;
+  }
+}
+
+
+.yellow   { background-color: #ffee80; }
+.green    { background-color: #96cfb9; }
+.turqoise { background-color: #6ec0d6; }
+.seablue  { background-color: #537fbb; }
+
+
+
+@media (min-aspect-ratio: 7/10) and (max-aspect-ratio: 32/24) {
+
+
+  div.circle {
+    position:  fixed;
+    width: 4vw;
+    height: 4vw;
+    right:  18vw;
+    border-radius: 4vw;
+    z-index:  1;
+  }
+
+  div.headitem {
+    position:  fixed;
+    z-index: 3;
+    padding:  5vw 5vw 5vw 10vw;
+    font-size: 3vw;
+    right: 0vw;
+    top: 0vw;
+    letter-spacing: 0.3vw;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+}
+
+
+@media (max-aspect-ratio: 7/10) {
+
+
+  div.circle {
+    position:  fixed;
+    width: 7vw;
+    height: 7vw;
+    right:  27vw;
+    border-radius: 7vw;
+    z-index:  1;
+  }
+
+  div.headitem {
+    position:  fixed;
+    z-index: 3;
+    padding:  5vw 5vw 5vw 16vw;
+    font-size: 5vw;
+    right: 0vw;
+    top: 0vw;
+    letter-spacing: 0.3vw;
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+}
